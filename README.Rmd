@@ -6,7 +6,7 @@ params:
   turma: 202205-relatorios
   nome_curso: Relatórios e apresentações
   num_aula: '0'
-  download_material: 'TRUE'
+  download_material: 'FALSE'
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -44,32 +44,8 @@ Fora do horário de aula ou monitoria:
 
 ## Slides
 
-```{r}
-paths <- CursoRopen:::list_github_files(params$main_repo, "slides/", "[0-9]-.*html$") %>% 
-  tibble::enframe(value = "paths") %>% 
-  dplyr::filter(!stringr::str_detect(paths, "figure-html")) %>% 
-  dplyr::mutate(file_path_sem_extencao = tools::file_path_sans_ext(paths)) %>% 
-  dplyr::select(-name)
 
-
-paths_pdf <- CursoRopen:::list_github_files(params$main_repo, "slides/", "[0-9]-.*pdf$") %>% 
-  tibble::enframe(value = "paths_pdf") %>% 
-  dplyr::mutate(file_path_sem_extencao = tools::file_path_sans_ext(paths_pdf)) %>%
-  dplyr::select(-name)
-
-dplyr::left_join(paths, paths_pdf, by = "file_path_sem_extencao") %>% 
-dplyr::mutate(
-  slide = paths,
-  link = paste0("https://curso-r.github.io/", params$main_repo, "/", slide),
-  slides = glue::glue("[{basename(slide)}]({link})"),
-  slide_pdf = paths_pdf,
-  link_pdf = paste0("https://curso-r.github.io/", params$main_repo, "/", slide_pdf),
-  pdf = glue::glue("[{basename(slide_pdf)}]({link_pdf})")
-) %>% 
-  dplyr::filter(!stringr::str_detect(slide, "_files/")) %>%
-  dplyr::select(slides, pdf) %>% 
-  knitr::kable()
-```
+- [Slides do curso](https://curso-r.github.io/main-relatorios/slides/index.html#1)
 
 
 ## Scripts utilizados em aula
@@ -97,14 +73,14 @@ knitr::kable(
 ## Lição de casa
 
 ```{r}
-tibble::tibble(
-  nome = CursoRopen:::list_github_files(params$main_repo, "exercicios/"),
-  link = paste0("https://curso-r.github.io/", params$main_repo, "/", nome),
-  exercicio = glue::glue("[{nome}]({link})")
-) %>%
-    dplyr::filter(!stringr::str_detect(nome, "resolucao_")) %>% 
-  dplyr::select(exercicio) %>% 
-  knitr::kable()
+# tibble::tibble(
+#   nome = CursoRopen:::list_github_files(params$main_repo, "exercicios/"),
+#   link = paste0("https://curso-r.github.io/", params$main_repo, "/", nome),
+#   exercicio = glue::glue("[{nome}]({link})")
+# ) %>%
+#     dplyr::filter(!stringr::str_detect(nome, "resolucao_")) %>% 
+#   dplyr::select(exercicio) %>% 
+#   knitr::kable()
 ```
 
 
