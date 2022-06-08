@@ -70,6 +70,10 @@ knitr::kable(
 ```
 
 
+```{r}
+```
+
+
 
 ```{r}
 ## Lição de casa
