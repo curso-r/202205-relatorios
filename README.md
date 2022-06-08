@@ -3,35 +3,35 @@
 
 ## Informações importantes
 
--   Nosso blog: <https://curso-r.com/blog/>
+  - Nosso blog: <https://curso-r.com/blog/>
 
--   Nossos livros: [Ciência de Dados em R](https://livro.curso-r.com/) e
+  - Nossos livros: [Ciência de Dados em R](https://livro.curso-r.com/) e
     [Zen do R](https://curso-r.github.io/zen-do-r/)
 
 ## Dúvidas
 
 Fora do horário de aula ou monitoria:
 
--   perguntas gerais sobre o curso deverão ser feitas no Classroom.
+  - perguntas gerais sobre o curso deverão ser feitas no Classroom.
 
--   perguntas sobre R, principalmente as que envolverem código, deverão
+  - perguntas sobre R, principalmente as que envolverem código, deverão
     ser enviadas no [nosso fórum](https://discourse.curso-r.com/).
 
 ## Slides
 
--   [Slides do
+  - [Slides do
     curso](https://curso-r.github.io/main-relatorios/slides/index.html#1)
 
 ## Scripts utilizados em aula
 
 | script                                                                                  |
-|:----------------------------------------------------------------------------------------|
+| :-------------------------------------------------------------------------------------- |
 | [pratica/aula-1](https://github.com/curso-r/202205-relatorios/blob/main/pratica/aula-1) |
 
 ## Trabalhos finais premiados
 
-| pasta_compactada |
-|:-----------------|
+| pasta\_compactada |
+| :---------------- |
 
 ## Material extra
 
@@ -40,7 +40,7 @@ que comentamos quando tiramos dúvidas (não necessariamente são
 relacionadas com o conteúdo da aula).
 
 | Aula | Tema               | Descrição                                                                                                                          |
-|-----:|:-------------------|:-----------------------------------------------------------------------------------------------------------------------------------|
+| ---: | :----------------- | :--------------------------------------------------------------------------------------------------------------------------------- |
 |    0 | Comunidades        | [Discourse da Curso-R](https://discourse.curso-r.com)                                                                              |
 |    1 | Dúvidas            | [Officeverse - word](https://ardata-fr.github.io/officeverse/)                                                                     |
 |    1 | Dúvidas            | [Flextable - tabelas bem formatadas no word](https://ardata-fr.github.io/flextable-book/)                                          |
@@ -62,6 +62,7 @@ relacionadas com o conteúdo da aula).
 |    1 | Dúvidas            | [Sugestão da turma - Model summary - tabela resumindo modelos](https://vincentarelbundock.github.io/modelsummary/)                 |
 |    1 | Dúvidas            | [gtsummary - tabelas de sumarização](https://www.danieldsjoberg.com/gtsummary/articles/tbl_summary.html)                           |
 |    1 | dados              | [SIG-BM - Base de dados usada na aula](https://app.anm.gov.br/SIGBM/Publico/ClassificacaoNacionalDaBarragem)                       |
+|    1 | Dúvidas            | [Tabelas com word - exemplo pratico](https://github.com/beatrizmilz/ambi-agua-2823/blob/main/inst/manuscript.Rmd)                  |
 |    2 | Escrita científica | [Writing Reproducible Research Papers with R Markdown](https://resulumit.com/teaching/rmd_workshop.html#1)                         |
 |    2 | RMarkdown          | [Referenciando equações no RMarkdown](https://bookdown.org/yihui/bookdown/markdown-extensions-by-bookdown.html)                    |
 |    3 | CSS                | [Curadoria de HTML e CSS](https://curadoria-front-end-roadmap-git-main-notnotgabriel.vercel.app/html)                              |
