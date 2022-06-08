@@ -51,16 +51,16 @@ Fora do horário de aula ou monitoria:
 ## Scripts utilizados em aula
 
 ```{r}
-pasta <- "exemplos_de_aula/"
+pasta <- "pratica"
 
 
 knitr::kable(
   tibble::tibble(
-    script = CursoRopen:::list_github_files(params$main_repo, pasta, ".R$"),
+    script = list.files(pasta, full.names = TRUE),
     link = paste0(
       "https://github.com/curso-r/",
       params$turma,
-      "/blob/master/",
+      "/blob/main/",
       script
     )
   ) %>%
@@ -70,9 +70,9 @@ knitr::kable(
 ```
 
 
-## Lição de casa
 
 ```{r}
+## Lição de casa
 # tibble::tibble(
 #   nome = CursoRopen:::list_github_files(params$main_repo, "exercicios/"),
 #   link = paste0("https://curso-r.github.io/", params$main_repo, "/", nome),

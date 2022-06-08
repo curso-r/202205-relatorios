@@ -1,0 +1,47 @@
+---
+title: "Barragens de mineração no Brasil"
+author: "Beatriz + Turma da Curso-R"
+date: 'Junho de 2022'
+output: 
+  prettydoc::html_pretty:
+    theme: "architect"
+# prettydoc::html_pretty(theme = "architect")    
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(devtools)
+library(dplyr)
+```
+
+```{r load-all, echo=FALSE, message=FALSE, warning=FALSE}
+load_all()
+```
+
+```{r tabela-top-10, echo=FALSE, tab.cap = "Dez estados brasileiros com mais barragens cadastradas no SIG-BM"}
+sigbm |> 
+  count(uf, sort = TRUE) |> 
+  slice(1:10) |> 
+  transformar_em_flextable()
+```
+
+## Objetivos
+
+xxxx
+
+## Materiais e métodos
+
+xxxx
+
+## Resultados
+
+xxx
+
+## Conclusão
+
+xxx
+
+## Referências
