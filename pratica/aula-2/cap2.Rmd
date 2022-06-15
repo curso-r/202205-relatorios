@@ -1,0 +1,10 @@
+---
+# title: "Untitled"
+# author: "Curso-R"
+# date: '2022-06-15'
+# output: html_document
+---
+
+# Capítulo 2 
+
+aqui falamos de lero leorlero 
