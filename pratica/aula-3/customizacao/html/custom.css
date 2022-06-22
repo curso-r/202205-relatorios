@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Nunito&display=swap');
+
+
+p{
+ text-align: justify;
+}
+
+h1, h2, h3, h4, h5{
+  color: #2E86C1;
+  font-family: 'Nunito', sans-serif;
+}
+
+body{
+  font-size: 15pt;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+
+.csl-entry{
+  padding-bottom: 20px;
+}
+
+
+.logo-topo{
+  max-width: 300px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
