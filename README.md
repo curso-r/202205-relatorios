@@ -3,36 +3,37 @@
 
 ## Informações importantes
 
-  - Nosso blog: <https://curso-r.com/blog/>
+-   Nosso blog: <https://curso-r.com/blog/>
 
-  - Nossos livros: [Ciência de Dados em R](https://livro.curso-r.com/) e
+-   Nossos livros: [Ciência de Dados em R](https://livro.curso-r.com/) e
     [Zen do R](https://curso-r.github.io/zen-do-r/)
 
 ## Dúvidas
 
 Fora do horário de aula ou monitoria:
 
-  - perguntas gerais sobre o curso deverão ser feitas no Classroom.
+-   perguntas gerais sobre o curso deverão ser feitas no Classroom.
 
-  - perguntas sobre R, principalmente as que envolverem código, deverão
+-   perguntas sobre R, principalmente as que envolverem código, deverão
     ser enviadas no [nosso fórum](https://discourse.curso-r.com/).
 
 ## Slides
 
-  - [Slides do
+-   [Slides do
     curso](https://curso-r.github.io/main-relatorios/slides/index.html#1)
 
 ## Scripts utilizados em aula
 
 | script                                                                                  |
-| :-------------------------------------------------------------------------------------- |
+|:----------------------------------------------------------------------------------------|
 | [pratica/aula-1](https://github.com/curso-r/202205-relatorios/blob/main/pratica/aula-1) |
 | [pratica/aula-2](https://github.com/curso-r/202205-relatorios/blob/main/pratica/aula-2) |
+| [pratica/aula-3](https://github.com/curso-r/202205-relatorios/blob/main/pratica/aula-3) |
 
 ## Trabalhos finais premiados
 
-| pasta\_compactada |
-| :---------------- |
+| pasta_compactada |
+|:-----------------|
 
 ## Material extra
 
@@ -41,7 +42,7 @@ que comentamos quando tiramos dúvidas (não necessariamente são
 relacionadas com o conteúdo da aula).
 
 | Aula | Tema               | Descrição                                                                                                                           |
-| ---: | :----------------- | :---------------------------------------------------------------------------------------------------------------------------------- |
+|-----:|:-------------------|:------------------------------------------------------------------------------------------------------------------------------------|
 |    0 | Comunidades        | [Discourse da Curso-R](https://discourse.curso-r.com)                                                                               |
 |    1 | Dúvidas            | [Officeverse - word](https://ardata-fr.github.io/officeverse/)                                                                      |
 |    1 | Dúvidas            | [Flextable - tabelas bem formatadas no word](https://ardata-fr.github.io/flextable-book/)                                           |
@@ -78,6 +79,16 @@ relacionadas com o conteúdo da aula).
 |    3 | Deploy             | [Netlify Drop](https://app.netlify.com/drop)                                                                                        |
 |    3 | Web                | [(Git) Livro Zen do R: Git e GitHub](https://curso-r.github.io/zen-do-r/git-github.html)                                            |
 |    3 | Web                | [(Git) Material sobre Git e GitHub no RStudio](https://curso-r.github.io/main-pacotes/slides/index.html#60)                         |
+|    3 | Dúvidas            | [Favicon generator](https://realfavicongenerator.net/)                                                                              |
+|    3 | Dúvidas            | [Adicionar Favicon](https://bookdown.org/yihui/rmarkdown-cookbook/favicon.html)                                                     |
+|    3 | Dúvidas            | [Results asis - chunk options](https://discourse.curso-r.com/t/automatizar-rmarkdown/1449/2)                                        |
+|    3 | Dúvidas            | [Chunk options](https://discourse.curso-r.com/t/rmarkdown-o-que-significa-o-chunk-option-results/1106)                              |
+|    3 | Dúvidas            | [Exibir condicionalmente os textos](https://discourse.curso-r.com/t/rmarkdown-como-exibir-condicionalmente-textos/1147)             |
+|    3 | HTML e CSS         | [Cores em hexadecimal](https://htmlcolorcodes.com/)                                                                                 |
+|    3 | HTML e CSS         | [Google fonts](https://fonts.google.com/)                                                                                           |
+|    3 | Office             | [Pacote officer](https://ardata-fr.github.io/officeverse/officer-for-powerpoint.html)                                               |
+|    3 | Office             | [Post - como usar templates para word](https://blog.curso-r.com/posts/2021-12-23-word-rmarkdown/)                                   |
+|    3 | HTML e CSS         | [Font awesome - icones](https://fontawesome.com/icons)                                                                              |
 |    4 | Pagedown           | [Exemplo de uso do tema thesis do pagedown](https://github.com/Athospd/mestrado/blob/master/inst/monografia/monografia.pdf)         |
 |    4 | RMarkdown          | [Temas do pagedown](https://github.com/rstudio/pagedown)                                                                            |
 |    4 | RMarkdown          | [Livros escritos com Bookdown](https://bookdown.org/)                                                                               |
