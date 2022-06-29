@@ -3,29 +3,29 @@
 
 ## Informações importantes
 
--   Nosso blog: <https://curso-r.com/blog/>
+  - Nosso blog: <https://curso-r.com/blog/>
 
--   Nossos livros: [Ciência de Dados em R](https://livro.curso-r.com/) e
+  - Nossos livros: [Ciência de Dados em R](https://livro.curso-r.com/) e
     [Zen do R](https://curso-r.github.io/zen-do-r/)
 
 ## Dúvidas
 
 Fora do horário de aula ou monitoria:
 
--   perguntas gerais sobre o curso deverão ser feitas no Classroom.
+  - perguntas gerais sobre o curso deverão ser feitas no Classroom.
 
--   perguntas sobre R, principalmente as que envolverem código, deverão
+  - perguntas sobre R, principalmente as que envolverem código, deverão
     ser enviadas no [nosso fórum](https://discourse.curso-r.com/).
 
 ## Slides
 
--   [Slides do
+  - [Slides do
     curso](https://curso-r.github.io/main-relatorios/slides/index.html#1)
 
 ## Scripts utilizados em aula
 
 | script                                                                                  |
-|:----------------------------------------------------------------------------------------|
+| :-------------------------------------------------------------------------------------- |
 | [pratica/aula-1](https://github.com/curso-r/202205-relatorios/blob/main/pratica/aula-1) |
 | [pratica/aula-2](https://github.com/curso-r/202205-relatorios/blob/main/pratica/aula-2) |
 | [pratica/aula-3](https://github.com/curso-r/202205-relatorios/blob/main/pratica/aula-3) |
@@ -33,8 +33,8 @@ Fora do horário de aula ou monitoria:
 
 ## Trabalhos finais premiados
 
-| pasta_compactada |
-|:-----------------|
+| pasta\_compactada |
+| :---------------- |
 
 ## Material extra
 
@@ -43,7 +43,7 @@ que comentamos quando tiramos dúvidas (não necessariamente são
 relacionadas com o conteúdo da aula).
 
 | Aula | Tema               | Descrição                                                                                                                                                    |
-|-----:|:-------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ---: | :----------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |    0 | Comunidades        | [Discourse da Curso-R](https://discourse.curso-r.com)                                                                                                        |
 |    1 | Dúvidas            | [Officeverse - word](https://ardata-fr.github.io/officeverse/)                                                                                               |
 |    1 | Dúvidas            | [Flextable - tabelas bem formatadas no word](https://ardata-fr.github.io/flextable-book/)                                                                    |
