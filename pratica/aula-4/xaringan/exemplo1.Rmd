@@ -1,0 +1,42 @@
+---
+title: "Presentation Ninja"
+subtitle: "⚔<br/>with xaringan"
+author: "Yihui Xie"
+institute: "RStudio, PBC"
+date: "2016/12/12 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    css: ["rladies", "rladies-fonts"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+## Naruto!
+
+Naruto é um personagem fictício do anime e mangá Naruto, criado por Masashi Kishimoto. Naruto Uzumaki é o protagonista principal do mangá e do anime. Naruto Uzumaki é um ninja jovem e imaturo, mas muito determinado. Ele é amigo de Sasuke e Sakura.
+
+---
+
+## Outro slide
+
+Aqui nao quero spoilers!
+
+---
+class: center, middle, inverse
+
+# Title
+
+---
+
+# Agenda
+
+1. Introduction
+2. Deep-dive
+3. ...
+
+---
+
+# Introduction

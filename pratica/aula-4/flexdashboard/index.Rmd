@@ -1,0 +1,141 @@
+---
+title: "Filmes da Pixar"
+output: 
+  flexdashboard::flex_dashboard:
+    navbar:
+        - { icon: "fa-twitter", href: "https://twitter.com/BeaMilz", align: right} 
+    theme:
+      bg: "#d6d4d4"
+      fg: "#595151"
+      primary: "#2b2c1e"
+      base_font:
+        google: Prompt
+      code_font: 
+        google: Fira Code
+    orientation: rows
+    vertical_layout: fill
+---
+
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+thematic::thematic_rmd()
+library(dados)
+```
+
+
+
+Row {data-height=100}
+-----------------------------------------------------------------------
+
+### Número de filmes
+
+```{r}
+valueBox(
+  value = nrow(pixar_filmes),
+  caption = "Número de filmes",
+  icon = "fa-film",
+  color = "primary"
+)
+```
+
+
+
+### Nota média
+
+
+```{r}
+valueBox(round(mean(pixar_avalicao_publico$nota_rotten_tomatoes, na.rm = TRUE)), 
+         caption = "Nota média dos filmes no Rotten tomatoes",
+         icon="fa-thumbs-up", 
+         color = "primary")
+
+
+```
+
+### Bilheteria
+
+```{r}
+valueBox(round(mean(pixar_bilheteria$bilheteria_mundial, 
+     na.rm = TRUE)/1000000), 
+         caption = "Média da Bilheteria mundial (em  milhões de dólares)",
+         icon="fa-dollar", 
+         color = "primary")
+
+```
+
+
+Row {data-height=50}
+-----------------------------------------------------------------------
+
+### Top filmes!
+
+```{r}
+maior_bilheteria <- pixar_bilheteria %>% 
+  filter(bilheteria_mundial == max(bilheteria_mundial, na.rm  = TRUE)) %>% 
+  pull(filme)
+
+filmes_oscars <- pixar_oscars %>%
+  filter(resultado %in% c("Venceu", "Venceu Prêmio Especial")) %>%
+  count(filme) %>%
+  filter(n == max(n)) %>%
+  pull(filme) %>%
+  knitr::combine_words(and = " e ", oxford_comma = FALSE)
+```
+
+
+O filme de maior bilheteria é **`r maior_bilheteria`**. Os filmes com a maior quantidade de oscars são: `r filmes_oscars`.
+
+
+Row {data-height=500 .tabset}
+-----------------------------------------------------------------------
+
+### Nota dos filmes
+
+```{r, dpi = 300, out.width="100%"}
+pixar_avalicao_publico %>% 
+  drop_na(nota_rotten_tomatoes) %>% 
+  mutate(filme = forcats::fct_reorder(filme, nota_rotten_tomatoes)) %>% 
+  ggplot() +
+  geom_col(aes(x = nota_rotten_tomatoes, y = filme)) +
+  theme_minimal() +
+  labs(y = "Filme", x = "Nota")
+```
+
+
+### Tabela
+
+```{r}
+pixar_filmes %>% 
+  DT::datatable()
+```
+
+
+### Nota x Bilheteria
+
+```{r}
+grafico_nota_orcamento <- pixar_avalicao_publico %>%
+  full_join(pixar_bilheteria) %>%
+  ggplot() +
+  geom_point(aes(y = nota_rotten_tomatoes, x = orcamento, color = filme)) +
+  theme_minimal() +
+  labs(x = "Orçamento", y = "Nota no Rotten Tomatoes")
+
+
+plotly::ggplotly(p = grafico_nota_orcamento, tooltip = "filme") %>%  plotly::hide_legend()
+```
+
+
+### Orçamento x Bilheteria
+
+```{r}
+grafico_orcamento_bilheteria <- pixar_bilheteria %>%
+  ggplot() +
+  geom_point(aes(y = bilheteria_mundial, x = orcamento, color = filme)) +
+  theme_minimal() +
+  labs(x = "Orçamento", y = "Bilheteria mundial")
+
+
+plotly::ggplotly(p = grafico_orcamento_bilheteria, tooltip = "filme") %>%  plotly::hide_legend()
+```
