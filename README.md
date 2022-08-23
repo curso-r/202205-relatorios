@@ -16,6 +16,11 @@ Fora do horário de aula ou monitoria:
 
   - perguntas sobre R, principalmente as que envolverem código, deverão
     ser enviadas no [nosso fórum](https://discourse.curso-r.com/).
+    
+## Trabalhos finais premiados
+
+- Letícia Lopes: https://leticialopesdias.github.io/trabalhoCursoRelatorios/docs/ (trabalho) e https://github.com/LeticiaLopesDias/trabalhoCursoRelatorios (código).
+- Marcio Vakassugui (solicitou que não fosse divulgado por ter dados que não são públicos)
 
 ## Slides
 
@@ -31,10 +36,7 @@ Fora do horário de aula ou monitoria:
 | [pratica/aula-3](https://github.com/curso-r/202205-relatorios/blob/main/pratica/aula-3) |
 | [pratica/aula-4](https://github.com/curso-r/202205-relatorios/blob/main/pratica/aula-4) |
 
-## Trabalhos finais premiados
 
-| pasta\_compactada |
-| :---------------- |
 
 ## Material extra
 
