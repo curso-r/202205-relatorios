@@ -41,6 +41,10 @@ Fora do horário de aula ou monitoria:
 
 - perguntas sobre R, principalmente as que envolverem código, deverão ser enviadas no [nosso fórum](https://discourse.curso-r.com/).
 
+## Trabalhos finais premiados
+
+- Letícia Lopes: https://leticialopesdias.github.io/trabalhoCursoRelatorios/docs/ (trabalho) e https://github.com/LeticiaLopesDias/trabalhoCursoRelatorios (código).
+- Marcio Vakassugui (solicitou que não fosse divulgado por ter dados que não são públicos)
 
 ## Slides
 
